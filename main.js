@@ -1,8 +1,8 @@
 const numeroA = Number(document.getElementById ('numero-a').value)
 const numeroB = Number(document.getElementById('numero-b').value)
 const calcular = document.getElementById('botao-enviar')
-const mensagemErro = 'Formulário inválido! O número B deve ser maior que o número A.'
-const mensagemSucesso = 'Formulário válido! O número B é maior que o número A.'
+const mensagemErro = `Formulário inválido! O número ${numeroB.value} deve ser maior que o ${numeroA.value}.`
+const mensagemSucesso = `Formulário válido! O ${numeroB.value} é maior que o ${numeroA.value}.`
 
 
 function calcular (numero){
@@ -14,7 +14,7 @@ form.addEventListener('subimit', function(e){
     e.preventDefault()
 
 
-if(calcular){ 
+if(calcular()){ 
     const containerMensagemSucesso = document.querySelector('#mensagem-sucesso')
        containerMensagemSucesso.innerHTML = mensagemSucesso
        containerMensagemSucesso.style.display = 'block'
