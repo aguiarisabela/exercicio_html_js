@@ -61,13 +61,23 @@ body {
 }
 
 #mensagem-sucesso{
-    background-color: rgb(4, 249, 0);
-    font-size: 12px;
+    background-color: rgb(41, 218, 38);
+    font-size: 15px;
     display: none;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
 }
 
 #mensagem-erro{
     background-color: red;
-    font-size: 12px;
+    font-size: 15px;
     display: none;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
 }
